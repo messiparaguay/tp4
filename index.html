@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitio Web de Tecnología</title>
+    <!-- Enlace a Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Estilos adicionales */
+        .hero-image {
+            background-image: url('images/pag1.jpg'); /* Imagen destacada */
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+        }
+        .hero-text {
+            color: cyan;
+            text-align: center;
+            padding-top: 100px;
+        }
+        .section-title {
+            margin-top: 30px;
+            text-align: center;
+        }
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <!-- Menú de Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">TechWorld</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#home">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Acerca de</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Página de Inicio -->
+    <div id="home" class="hero-image">
+        <div class="hero-text">
+            <h1>Explora el Futuro de la Tecnología</h1>
+            <p>Avances innovadores y proyectos que transforman el mundo.</p>
+        </div>
+    </div>
+
+    <!-- Sección "Acerca de" -->
+    <section id="about" class="container my-5">
+        <h2 class="section-title">Acerca de este sitio</h2>
+        <p>
+            Este sitio web está dedicado a compartir las últimas tendencias en tecnología, explorar
+            innovaciones y discutir los impactos que estas tienen en nuestra vida diaria. Aquí encontrarás
+            información relevante sobre los avances tecnológicos y cómo están cambiando el mundo.
+        </p>
+    </section>
+
+    <!-- Área de Trabajos o Proyectos -->
+    <section id="projects" class="container my-5">
+        <h2 class="section-title">Proyectos Tecnológicos</h2>
+        <div class="row">
+            <!-- Proyecto 1 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/ia.jpeg" class="card-img-top" alt="Proyecto 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Proyecto de Inteligencia Artificial</h5>
+                        <p class="card-text">Este proyecto explora los avances más recientes en el campo de la inteligencia artificial.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Proyecto 2 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/5gg.jpg" class="card-img-top" alt="Proyecto 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Redes 5G</h5>
+                        <p class="card-text">Descubre cómo la tecnología 5G está cambiando las comunicaciones globales.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Proyecto 3 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/real.jpg" class="card-img-top" alt="Proyecto 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Realidad Virtual</h5>
+                        <p class="card-text">Explora el mundo de la realidad virtual y su aplicación en diversas industrias.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section id="contact" class="container my-5">
+        <h2 class="section-title">Contacto</h2>
+        <form>
+            <div class="mb-3">
+                <label for="name" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Correo Electrónico</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Enlace a los scripts de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
